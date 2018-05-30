@@ -1,7 +1,7 @@
 process.stdin.setEncoding('utf-8');
 
 process.stdin.on('readable', function() {
-	
+
 	function timeCalculator(seconds) {
 		var seconds= process.stdin.read();
 	    if (seconds !== null) {
@@ -36,6 +36,6 @@ process.stdin.on('readable', function() {
 
 		}
 	}
-}
+});
 
 exports.print = timeCalculator;
