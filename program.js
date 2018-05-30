@@ -35,5 +35,3 @@ process.stdin.on('readable', function() {
 
 	}
 });
-
-exports.print = readable;
