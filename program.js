@@ -1,7 +1,6 @@
 process.stdin.setEncoding('utf-8');
 
-process.stdin.on('readable', function() {
-
+function timeCalculator(seconds) {
 	var seconds= process.stdin.read();
     if (seconds !== null) {
         var instruction = seconds.toString().trim();
@@ -13,7 +12,7 @@ process.stdin.on('readable', function() {
 	    switch (instruction) {
 
 	    	case seconds = NaN:
-	    		console.log("fake")
+	    		process.stdout.write("Wpisano złą wartość\n");
 			    process.exit();
 			    break;
 
@@ -34,4 +33,4 @@ process.stdin.on('readable', function() {
 	    }
 
 	}
-});
+}
