@@ -13,7 +13,7 @@ process.stdin.on('readable', function() {
 	    switch (instruction) {
 
 	    	case seconds = NaN:
-	    		process.stdout.write("Wpisano złą wartość\n");
+	    		console.log("fake")
 			    process.exit();
 			    break;
 
